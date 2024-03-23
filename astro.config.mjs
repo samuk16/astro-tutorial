@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import unocss from '@unocss/astro';
 import presetWind from '@unocss/preset-wind';
+import transformerVariantGroup from '@unocss/transformer-variant-group'
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -9,6 +10,9 @@ export default defineConfig({
       presets: [
         presetWind()
       ],
+      transformers: [
+        transformerVariantGroup()
+      ]
     }),
   ]
 });
