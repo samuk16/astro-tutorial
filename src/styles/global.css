@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(30 41 59);
+    background-color: #f1f5f9;
     font-family: sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
-    color: white;
+    color: black;
 }
 
 * {
@@ -21,64 +21,40 @@ h1 {
     font-size: 2.5rem;
 }
 
-/* estilos de la barra de navegación*/
-/* .hamburger {
-    padding-right: 20px;
-    cursor: pointer;
+html.dark {
+    background-color: rgb(30 41 59);
+    color: #fff;
+
+}
+.dark body {
+    color: #fff;
+}
+.nav-links a:hover{
+    color: white;
+}
+.dark .nav-links a {
+    color: #fff;
+}
+.link-tags:hover{
+    color: white;
+}
+.tag-rounded{
+    color: white;
+    /* background-color: #cbd5e1; */
+}
+.tag-rounded:hover{
+    color: white;
+}
+.btnGreeting{
+    color: black;
+    background-color: #cbd5e1;
+    /* background-color: white; */
 }
 
-.hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #ff9776;
+.btnGreeting:hover{
+    color: white;
+    background-color: #334155;
 }
-
-.nav-links {
-    width: 100%;
-    top: 5rem;
-    left: 48px;
-    background-color: #ff9776;
-    display: none;
-    margin: 0;
-}
-
-.nav-links a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.nav-links a:hover,
-a:focus {
-    background-color: #ff9776;
-}
-
-
-
-@media screen and (min-width: 636px) {
-    .nav-links {
-        margin-left: 5em;
-        display: block;
-        position: static;
-        width: auto;
-        background: none;
-    }
-
-    .nav-links a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
-
-    .hamburger {
-        display: none;
-    }
-} */
 .expanded {
     display: unset;
 }

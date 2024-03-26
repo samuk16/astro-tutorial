@@ -9,7 +9,7 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).fla
   <div class="flex gap-2 flex-col p-2 w-fit rounded">
     {
       uniqueTags.map((tag) => (
-        <a class="p-1 w-full hover:bg-slate-700 rounded-sm" href={`/tags/${tag}`}> {tag} </a>
+        <a class=" link-tags p-1 w-full hover:bg-slate-700 rounded-sm" href={`/tags/${tag}`}> {tag} </a>
       ))
     }
   </div>
