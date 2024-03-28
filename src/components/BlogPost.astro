@@ -1,8 +1,9 @@
 ---
-const { title,url } = Astro.props;
+const { title, url } = Astro.props;
 ---
-<li>
-    <a href={url} >
-        {title}
-    </a>
+
+<li class="link-tags p-1 w-full hover:bg-slate-700 rounded-sm">
+  <a href={url}>
+    {title}
+  </a>
 </li>
